@@ -98,6 +98,24 @@ ipv.setAction1Selected(true);
 ipv.isPlaying();
 ```
 
+# Import
+
+Project build.gradle
+
+```
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+```
+
+Module build.gradle
+```
+dependencies {
+	   compile 'com.github.iammert:InteractivePlayerView:8fd08a6d8b'
+}
+```
 
 # Design
 
