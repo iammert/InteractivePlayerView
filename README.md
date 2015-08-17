@@ -7,6 +7,8 @@ Custom android music player view.
 
 <img src="https://raw.githubusercontent.com/iammert/InteractivePlayerView/master/art/art.png"/>
 
+Check it on [youtube](https://www.youtube.com/watch?v=9cN5PCjUioM)
+
 # Usage(XML)
 
 Define it in your xml file.
