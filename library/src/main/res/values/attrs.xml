@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="interactiveplayerview">
+        <attr name="imageCover" format="integer" />
+        <attr name="durationSize" format="dimension" />
+        <attr name="emptyColor" format="color" />
+        <attr name="loadedColor" format="color" />
+        <attr name="selectedAction1" format="integer"/>
+        <attr name="unselectedAction1" format="integer"/>
+        <attr name="selectedAction2" format="integer"/>
+        <attr name="unselectedAction2" format="integer"/>
+        <attr name="selectedAction3" format="integer"/>
+        <attr name="unselectedAction3" format="integer"/>
+    </declare-styleable>
+</resources>
