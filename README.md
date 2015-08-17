@@ -37,7 +37,7 @@ Find view and set necessary values.
 
 ```java
 InteractivePlayerView ipv = (InteractivePlayerView) findViewById(R.id.ipv);
-ipv.setMax(123); // music dutation in seconds.
+ipv.setMax(123); // music duration in seconds.
 ipv.setOnActionClickedListener(new OnActionClickedListener() {
             @Override
             public void onActionClicked(int id) {
