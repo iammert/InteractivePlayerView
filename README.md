@@ -27,6 +27,10 @@ Define it in your xml file.
             app:unselectedAction3="@drawable/replay_unselected" />
 ```
 
+**IMPORTANT** : I designed shuffle, like and replay icons for my demo app. You can create your by using
+[Flat Icon](http://flaticon.com) website. Or, if you want to use mine instead of creating new icon set, then you can download my action set from [here](https://github.com/iammert/InteractivePlayerView/blob/master/demoIcons.zip).
+
+
 Find view and set necessary values.
 
 ```java
@@ -93,6 +97,7 @@ ipv.setAction1Selected(true);
 //Check if ipv is playing
 ipv.isPlaying();
 ```
+
 
 # Design
 
