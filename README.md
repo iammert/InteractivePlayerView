@@ -115,7 +115,7 @@ repositories {
 Module build.gradle
 ```
 dependencies {
-	   compile 'com.github.iammert:InteractivePlayerView:8fd08a6d8b'
+	   compile 'com.github.iammert:InteractivePlayerView:f4f6490290'
 }
 ```
 
