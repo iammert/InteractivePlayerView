@@ -105,6 +105,11 @@ public class InteractivePlayerView extends View{
     private Paint mPaintProgressToggle;
 
     /**
+     * Progress toggle radius
+     */
+    private float mRadiusToggle;
+
+    /**
      * Default empty progress color
      */
     private static final int COLOR_EMPTY_PROGRESS_DEFAULT = 0xAAFFFFFF;
@@ -403,6 +408,11 @@ public class InteractivePlayerView extends View{
 
         mCoverRadius = minSide / 2.3f;
 
+        mRadiusToggle = mWidth / 40.0f;
+
+        sizeDurationText = mHeight / 5;
+        mDurationPaint.setTextSize(sizeDurationText);
+
         createShader();
 
         if(mBitmapUnselectedAction1 != null && mBitmapSelectedAction1 != null){
@@ -438,7 +448,7 @@ public class InteractivePlayerView extends View{
                 (int)(mCenterX + (5 * (mCenterX / 13.0f))),
                 (int)(mCenterY + (mCenterY / 3.0f) + (mCenterY / 13.0f)));
 
-        mProgressRectF.set(30.0f, 30.0f, mWidth - 30.0f, mHeight - 30.0f);
+        mProgressRectF.set(20.0f, 20.0f, mWidth - 20.0f, mHeight - 20.0f);
 
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
@@ -506,9 +516,9 @@ public class InteractivePlayerView extends View{
         canvas.drawArc(mProgressRectF, 0, 360, false, mPaintEmptyProgress);
         canvas.drawArc(mProgressRectF, 270, calculatePastProgress(), false, mPaintLoadedProgress);
         canvas.drawCircle(
-                (float) (mCenterX + ((mCenterX - 30.0f) * Math.cos(Math.toRadians(calculatePastProgress() - 90)))),
-                (float) (mCenterY + ((mCenterX - 30.0f) * Math.sin(Math.toRadians(calculatePastProgress() - 90)))),
-                30.0f,
+                (float) (mCenterX + ((mCenterX - 20.0f) * Math.cos(Math.toRadians(calculatePastProgress() - 90)))),
+                (float) (mCenterY + ((mCenterX - 20.0f) * Math.sin(Math.toRadians(calculatePastProgress() - 90)))),
+                mRadiusToggle,
                 mPaintProgressToggle);
     }
 
