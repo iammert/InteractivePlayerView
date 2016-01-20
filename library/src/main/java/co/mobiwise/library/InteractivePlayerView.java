@@ -585,7 +585,7 @@ public class InteractivePlayerView extends View{
      * @param coverDrawable
      */
     public void setCoverDrawable(int coverDrawable) {
-        Drawable drawable = getContext().getDrawable(coverDrawable);
+        Drawable drawable = getContext().getResources().getDrawable(coverDrawable);
         mBitmapCover = drawableToBitmap(drawable);
         createShader();
         postInvalidate();
