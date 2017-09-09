@@ -21,6 +21,7 @@ import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+import android.support.v4.content.ContextCompat;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -585,7 +586,7 @@ public class InteractivePlayerView extends View{
      * @param coverDrawable
      */
     public void setCoverDrawable(int coverDrawable) {
-        Drawable drawable = getContext().getResources().getDrawable(coverDrawable);
+        Drawable drawable = ContextCompat.getDrawable(getContext(), coverDrawable);
         mBitmapCover = drawableToBitmap(drawable);
         createShader();
         postInvalidate();
